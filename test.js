@@ -3,7 +3,7 @@ const ytsch = require("youtube-search-api");
 const youtubesearchapi = require("youtube-search-api");
 
 let videosDl = []
-let ytres = youtubesearchapi.GetListByKeyword("funny pet", true, 1, [{ type: "video" }])
+let ytres = youtubesearchapi.GetListByKeyword("watermelon", true, 1, [{ type: "video" }])
     .then((res) => {
         res.items.forEach(element => {
             videosDl.push(element.id)
